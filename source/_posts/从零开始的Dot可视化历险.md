@@ -27,7 +27,9 @@ tags:
 `如图 2.1.a 所示`
 
 {% codeblock lang:dot %}
+
 diagraph G {
-    main [label="我是一个节点,名字叫做main"]
+    main [label="我是一个☝️节点,名字叫做main"]
 }
+
 {% endcodeblock %}
