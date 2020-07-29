@@ -101,3 +101,7 @@ deploy:
   type: git
   repository: git@github.com:whtoo/whtoo.github.io.git
   branch: master
+
+# Hexo-Graphviz
+graphviz:
+  enable: true
