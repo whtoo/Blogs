@@ -17,7 +17,7 @@ categories:
 digraph demo4 {
 	label=<<B>Graphviz基本组成结构</B>>;
 
-    labelloc=top;			// 标题位置
+    labelloc=t;			// 标题位置
     bgcolor=white;	// 背景透明
     
     node[shape=box];		// 结点形状为方形
