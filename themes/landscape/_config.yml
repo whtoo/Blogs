@@ -1,7 +1,9 @@
 # Header
 menu:
   Home: /
+  About: /about
   Archives: /archives
+  Projects: /projects
 rss: /atom.xml
 
 # Content
@@ -28,8 +30,11 @@ archive_type: 'monthly'
 show_count: false
 
 # Miscellaneous
-google_analytics:
-gauges_analytics:
+# google_analytics:
+#   enabled: false
+#   id: UA-86660611-1
+# gauges_analytics:
+  
 favicon: /favicon.png
 twitter:
 google_plus:
