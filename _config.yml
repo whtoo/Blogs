@@ -2,6 +2,18 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+# Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
+direction: ltr
+# Configure the navigation menu.
+# A pair 'Key: url' will result in a link to 'url' with the name 'Key' in the
+# navigation menu. Optionally, you can add translations for the 'Key' in
+# languages/*.yml
+nav:
+  home: /
+  about: /about/
+  articles: /archives/
+  projects: /projects/
+
 # Site
 title: Hexo
 subtitle: ''
@@ -93,7 +105,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cactus
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
