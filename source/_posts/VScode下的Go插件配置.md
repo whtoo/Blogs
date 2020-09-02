@@ -15,7 +15,7 @@ tags:
 |golang.org/x/tools/cmd/gorename      |gorename|
 |github.com/derekparker/delve/cmd/dlv |      dlv|
 |github.com/stamblerre/gocode  |        gocode-gomod|
-|github.com/rogpeppe/godef    |    godef|
+|github.com/rogpeppe/godef    |    godef|g
 |github.com/ianthehat/godef  |        godef-gomod|
 |github.com/sqs/goreturns   |goreturns|
 |golang.org/x/lint/golint   |       golint|
