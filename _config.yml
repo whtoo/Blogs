@@ -13,14 +13,16 @@ nav:
   about: /about/
   articles: /archives/
   projects: /projects/
+  typescript: /typescript/
+  flex-bison: /flex-bison/
 
 # Site
-title: Hexo
-subtitle: ''
+title: 传火之人
+subtitle: '树叶飞舞之处'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Arthur Blitz
+language: zh-cn
 timezone: ''
 
 # URL
@@ -105,7 +107,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
