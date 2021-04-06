@@ -13,15 +13,12 @@ nav:
   about: /about/
   articles: /archives/
   projects: /projects/
-  typescript: /typescript/
-  flex-bison: /flex-bison/
-  ReasonML: /ReasonML/
 
 # Site
-title: 传火之人
-subtitle: '树叶飞舞之处'
-description: ''
-keywords:
+title: 编译手艺人
+subtitle: '术之尽头'
+description: '这是一个编译全栈应用的万花筒'
+keywords: Compiler, Programming Language,Compilation
 author: Arthur Blitz
 language: zh-cn
 timezone: ''
