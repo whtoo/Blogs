@@ -15,3 +15,23 @@ tags:
 
 ### 类层次关系
 {% asset_image class-graph.png "类层次结构"%}
+
+### 与Rx的大致对应（不准确）
+| 类名 | rx.js| 说明 |
+| - | - | - |
+| Cell | Rx.BehaviourSubject | 表示被观察的会变化的值的容器(cache line of data) |
+| Lazy\<A\> | - | 对值类型A进行thunk的容器 |
+| Listener  | -  | 监听函数容器 |
+| Stream\<A\> | Rx.Observable | 值的变化瞬时传递管道 |
+| Transaction\<A\> | - | Emitter的容器(closure simulator) |
+
+### 模拟场景说明
+
+
+
+
+
+
+
+
+
