@@ -18,6 +18,7 @@ tags:
   [bind (name : symbol) (val : number)])
 (define-type-alias Env (listof Binding))
 ```
+
 2. Implement lookup in environment
 ```Racket
 ; DONE : Define lookup
@@ -29,9 +30,16 @@ tags:
              (bind-val (first env))]
             [else (lookup for (rest env))])]))
 ```
+
 3. Substitution VS Env(1st version)
 
 ```Racket
+; Error case in our implementation of Env 1st.
+; Our test case equal to
+; (define (f1 x) (f2 4))
+; (define (f2 y) (+ x y))
+; (f1 3)
+; If we take a look, we will find error binding that x is not binded in f2's definition.
 (interp (appC 'f1 (numC 3))
                     mt-env
                     (list (fdC 'f1 'x (appC 'f2 (numC 4)))
