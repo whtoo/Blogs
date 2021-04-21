@@ -32,16 +32,36 @@ tags:
 ```
 
 3. Substitution VS Env(1st version)
-
 ```Racket
 ; Error case in our implementation of Env 1st.
 ; Our test case equal to
 ; (define (f1 x) (f2 4))
 ; (define (f2 y) (+ x y))
 ; (f1 3)
-; If we take a look, we will find error binding that x is not binded in f2's definition.
+; If we take a look, we will find error binding that x 
+; is not binded in f2's definition.
 (interp (appC 'f1 (numC 3))
                     mt-env
                     (list (fdC 'f1 'x (appC 'f2 (numC 4)))
                           (fdC 'f2 'y (plusC (idC 'x) (idC 'y)))))
 ```
+4. detect error occus
+```Racket
+ ; env cross scope
+ <appC-interp-bind-in-env>
+                          (extend-env (bind (fdC-arg fd)
+                                            (interp a env fds))
+                                      env)
+```
+5. Corret last error binding
+```Racket
+ ; change env to mt-env
+ <appC-interp-bind-in-env>
+                          (extend-env (bind (fdC-arg fd)
+                                            (interp a env fds))
+                                      mt-env)
+```
+6. Scope in 3 terms
+6.1. Is it bound?
+6.2. where?
+6.3. Does it has parent scope?
