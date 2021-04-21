@@ -29,3 +29,11 @@ tags:
              (bind-val (first env))]
             [else (lookup for (rest env))])]))
 ```
+3. Substitution VS Env(1st version)
+
+```Racket
+(interp (appC 'f1 (numC 3))
+                    mt-env
+                    (list (fdC 'f1 'x (appC 'f2 (numC 4)))
+                          (fdC 'f2 'y (plusC (idC 'x) (idC 'y)))))
+```
