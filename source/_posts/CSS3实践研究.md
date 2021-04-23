@@ -3,7 +3,7 @@ title: CSS3实践研究
 date: 2021-04-23 11:45:33
 tags:
 ---
-# 拥抱流布局
+# 1. 拥抱流布局
 
 1. 布局(layout)
     1. 响应式与媒体查询
@@ -15,7 +15,7 @@ tags:
     3. fitler
     4. animatation
 
-## 术语
+## 2. 术语
 ``` CSS
 .track-item {
     width: 480px;
@@ -84,3 +84,23 @@ tags:
 | 属性选择器 | '[]' |  |
 | 伪类选择器 | ':' |  |
 | 伪元素选择器 | '::before' | |
+
+## 3. 布局--从block开始
+
+### 3.1 block-level element
+
+| 元素 | display |
+| - | - |
+| `<div>` | block |
+| `<li>` | list-item |
+| `<table>` | block |
+
+一个水平流上只能单独显示一个元素，多个块级元素则换行显示。
+正是由于`块级元素`具有换行特性，因此理论上它都可以配合clear属性
+来清除浮动带来的影响。
+
+### 简化layout解释
+| 盒子 | 职责 |
+| - | - |
+| `block-level box` | 结构 |
+| `inline box` | 内容 |
