@@ -15,6 +15,18 @@ tags:
 ### 如何实现上述语义呢？
 
 #### 盒子里的变量
+
+`In Racket` : substitution-value
+```Racket
+#lang typed-plai 
+
+(define-type ExprC)
+    ...
+    [BoxC (val : Value)]
+)
+```
+
+`In Java `: ref-replacement
 ``` Java
 class Box<T> {
       private T the_value;
