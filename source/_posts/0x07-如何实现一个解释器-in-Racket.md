@@ -6,7 +6,6 @@ tags:
 # 可变量的结构与表示
 
 ## 赋值
-
 ```Java
     float a = 0.1;
     Person p1 = new Person("Jackson");
@@ -16,7 +15,6 @@ tags:
 ### 如何实现上述语义呢？
 
 #### 盒子里的变量
-
 ``` Java
 class Box<T> {
       private T the_value;
