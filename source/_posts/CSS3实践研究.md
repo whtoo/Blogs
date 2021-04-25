@@ -1,8 +1,12 @@
 ---
-title: CSS3实践研究
+title: CSS3实践研究笔记
 date: 2021-04-23 11:45:33
 tags:
 ---
+
+# 前言
+以下所有内容来自我对`<<CSS世界>>`的摘录和总结，感谢原作者辛苦著书。
+
 # 1. 拥抱流布局
 
 1. 布局(layout)
@@ -100,7 +104,27 @@ tags:
 来清除浮动带来的影响。
 
 ### 简化layout解释
+a. 不考虑list-item的情况下
 | 盒子 | 职责 |
 | - | - |
 | `block-level box` | 结构 |
 | `inline box` | 内容 |
+
+b. 考虑list-item当前情况下
+
+| 盒子 | 职责 |
+| - | - |
+| `block-level box` | 主块级盒子 |
+| `inline box` | 内容 |
+| `list-item` | 附加盒子 |
+
+c. inline-block加入战场
+
+| 盒子 | 职责 |
+| - | - |
+| `block-level box` | 主块级盒子 |
+| `inline box` | 内容 |
+| `list-item` | 附加盒子 |
+| `inline-block` | 容器盒子 |
+
+d. 可视化盒模型
