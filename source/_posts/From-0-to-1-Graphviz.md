@@ -13,7 +13,7 @@ categories:
 
 ## 15%: Graphviz?Dot?这都是什么🧎‍♀️?
 
-```graphviz
+``` dot
 digraph demo4 {
 	label=<<B>Graphviz基本组成结构</B>>;
 
@@ -64,3 +64,18 @@ digraph demo4 {
     }
 }
 ```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.

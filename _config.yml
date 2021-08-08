@@ -16,12 +16,12 @@ nav:
 
 # Site
 title: 编译手艺人
-subtitle: '术之尽头'
-description: '这是一个编译全栈应用的万花筒'
+subtitle: "术之尽头"
+description: "这是一个编译全栈应用的万花筒"
 keywords: Compiler, Programming Language,Compilation
 author: Arthur Blitz
 language: zh-cn
-timezone: ''
+timezone: ""
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -50,7 +50,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -60,17 +60,16 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
-
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -106,7 +105,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -118,3 +117,28 @@ deploy:
 # Hexo-Graphviz
 graphviz:
   enable: true
+  # mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true # default true
+  version: "8.4.2" # default v7.1.2
+  options: # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+  startOnload: true  // default true
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
