@@ -1,0 +1,15 @@
+# NexT User Configuration File
+# See: https://theme-next.js.org/docs/getting-started/configuration.html
+
+# Example:
+# menu:
+#   home: / || fa fa-home
+#   archives: /archives/ || fa fa-archive
+#   tags: /tags/ || fa fa-tags
+
+# scheme: Muse
+# darkmode: false
+
+# Language setting for NexT theme
+# See: https://theme-next.js.org/docs/advanced-settings/language.html
+language: zh-CN
